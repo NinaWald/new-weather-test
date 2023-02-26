@@ -20,6 +20,7 @@ body {
 #weather-body {
     margin-top: 20px;
     display: flex;
+    height: 800px;
     width: 100%;
     max-width: 500px;
 }
@@ -36,6 +37,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h2 {
+    padding-top: 50px;
 }
 
 .todays-weather {
@@ -69,7 +74,10 @@ body {
     margin-top: 50px;
 }
 
+/* DESKTOP */
+@media (min-width: 1025px) {
 
-
-
-
+   .weather {
+    max-width: 600px;
+   }
+}
