@@ -19,7 +19,7 @@ const condition = document.getElementById('condition')
     city.innerHTML = `<p>${json.name}</p>`;
     temperature.innerHTML = `<p>${Math.round(json.main.temp * 10) / 10}°C</p`;
     condition.innerHTML = `<p>${json.weather[0].description}</p>`;
-    wind.innerHTML = `<p>Wind speed ${json.wind.speed}</p>`;
+    wind.innerHTML = `<p>Wind speed ${json.wind.speed} m/s</p>`;
 
     const setSunrise = json.sys.sunrise;
     const sunriseTime = new Date(setSunrise * 1000);
