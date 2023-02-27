@@ -49,7 +49,7 @@ const condition = document.getElementById('condition')
  const createFiveDayForecast = (filteredForecast) => {
     filteredForecast.forEach((day) => {
         const days = new Date(day.dt * 1000).toLocaleDateString("en-EN", {
-            weekday: "short",
+            weekday: "long",
         });
         const forecastTemp = Math.round(day.main.temp * 10) / 10;
         createFiveDaysInnerHTML(days, forecastTemp);
